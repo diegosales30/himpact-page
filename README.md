@@ -51,6 +51,8 @@ Instale as dependencias:
 npm install
 npm install styled-components
 npm install axios
+npm install --save react-toastify 
+npm install react-router-dom
 ```
 Execute a aplicação:
 ```
