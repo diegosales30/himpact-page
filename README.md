@@ -34,13 +34,13 @@
 - <img src="https://img.shields.io/static/v1?label=miro&message=UX/UI&language&color=yellow&style=for-the-badge&logo=MIRO"/>
 - <img src="https://img.shields.io/static/v1?label=notion&message=Gerenciamento&language&color=black&style=for-the-badge&logo=NOTION"/>
 
-### Deploy da aplicação com Github Pages: :octocat:: 
+### Deploy da aplicação com ...: 
 [Himpact]()
 
 ### Como rodar a aplicação:
 No terminal clone o projeto:
 ```
-git clone https://github.com/...
+git clone https://github.com/ThiagodaSilva27/himpact-page.git
 ```
 Entre na pasta do projeto:
 ```
