@@ -54,6 +54,7 @@ yarn add react-icons
 yarn add styled-components
 yarn add react-toastify
 yarn add react-router-dom@5
+yarn add react-hook-form yup hookform/resolvers
 ```
 Execute a aplicação:
 ```
