@@ -14,7 +14,12 @@ export const ContainerForm = styled.div`
       line-height: 24px;
       margin-left: 5px;
       color: var(--green);
-      
+      p{
+        font-size: 10px;
+        margin-left: 10px;
+        display: inline;
+        color: var(--red);
+      }
     }
     input {
       

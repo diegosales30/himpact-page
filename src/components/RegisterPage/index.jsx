@@ -9,6 +9,7 @@ const RegisterPage = () => {
   const handleNavigation = (path) => {
     return history.push(path);
   };
+
   return (
     <ContainerRegister>
       <BoxLogo>

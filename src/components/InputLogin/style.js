@@ -5,33 +5,8 @@ export const ContainerForm = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    input {
-      margin-top: 17px;
-      width: 262px;
-      height: 41px;
-
-      border: 1.5px solid var(--grey05);
-      box-sizing: border-box;
-      border-radius: 8px;
-      padding: 12px;
-      &::placeholder {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-
-        /* identical to box height */
-
-        color: var(--grey10);
-
-        /* Inside auto layout */
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        margin: 0px 8px;
-      }
-    }
+   
+    
     a {
       p
       width: 105px;
@@ -70,5 +45,39 @@ export const ContainerForm = styled.div`
       color: var(--white);
 
     }
+  }
+`;
+
+export const InputContainer = styled.section`
+  display: flex;
+  width: 262px;
+  height: 41px;
+  border: 1.5px solid var(--grey05);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 20px;
+  input {
+    width: 200px;
+
+    background: transparent;
+    border: none;
+    &::placeholder {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--grey10);
+      flex: none;
+    }
+  }
+  svg {
+    width: 18px;
+    height: 17px;
+    color: var(--grey10);
+    margin-right: 5px;
   }
 `;
