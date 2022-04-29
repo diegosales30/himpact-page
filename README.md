@@ -57,7 +57,7 @@ yarn add react-router-dom@5
 ```
 Execute a aplicação:
 ```
-npm run start
+yarn start
 ```
 
 ## Linguagens e libs :books:
