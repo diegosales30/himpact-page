@@ -1,15 +1,13 @@
-import logo from './logo192.png';
-import './App.css';
+import Routes from "./Routes";
+import GlobalStyle from "./Styles/global";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Himpact - o Hábito que impacta!</p>
-      </header>
+    <div>
+      <Routes />
+      <GlobalStyle />
     </div>
   );
-}
+};
 
 export default App;
