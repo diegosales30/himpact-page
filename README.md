@@ -48,11 +48,12 @@ cd himpact-page
 ```
 Instale as dependencias:
 ```
-npm install
-npm install styled-components
-npm install axios
-npm install --save react-toastify 
-npm install react-router-dom
+yarn install
+yarn install axios
+yarn add react-icons
+yarn add styled-components
+yarn add react-toastify
+yarn add react-router-dom@5
 ```
 Execute a aplicação:
 ```
