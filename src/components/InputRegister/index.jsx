@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import axios from "axios";
 
-const InputRegister = ({ errorTag }) => {
+const InputRegister = () => {
   const schema = yup.object().shape({
     name: yup.string().required("Campo obrigatório"),
     cpf: yup
