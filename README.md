@@ -46,7 +46,7 @@ Entre na pasta do projeto:
 ```
 cd himpact-page
 ```
-Instale as dependencias:
+Instale as dependencias FrontEnd:
 ```
 yarn install
 yarn install axios
@@ -55,6 +55,12 @@ yarn add styled-components
 yarn add react-toastify
 yarn add react-router-dom@5
 yarn add react-hook-form yup hookform/resolvers
+```
+Instale as dependencias BackEnd:
+```
+npm express
+npm nodemon
+npm sqlite3
 ```
 Execute a aplicação:
 ```
