@@ -27,24 +27,16 @@ const InputLogin = () => {
     resolver: yupResolver(schema),
   });
 
-  const history = useHistory();
+  //const history = useHistory();
 
   const onSubmit = ({ email, senha }) => {
     const user = { email, senha };
-
-    console.log(user);
     axios
-      .get("localhost:3001/clientes", user)
-      .then((res) => {
-        console.log(res);
-        toast.success("Logado com sucesso");
-        return history.push("/");
-      })
-      .catch((err) => {
-        toast.error("Email ou senha incorretos");
-        console.log(err);
-      });
+      .get("localhost:4000/clientes", user)
+      .then((res) => console.log(res.data))
+      .catch((error) => console.log(error));
   };
+
   return (
     <ContainerForm>
       <form onSubmit={handleSubmit(onSubmit)}>

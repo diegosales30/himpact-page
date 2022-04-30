@@ -37,11 +37,11 @@ const InputRegister = () => {
 
   const history = useHistory();
 
-  const onSubmit = ({ nome, cpf, email, senha }) => {
-    const user = { nome, cpf, email, senha };
-    console.log(user);
+  const onSubmit = (data) => {
+    //const user = { nome, cpf, email, senha };
+    console.log(data);
     axios
-      .post("http://localhost:4000/register", user)
+      .post("http://localhost:4000/register", data)
       .then((res) => {
         console.log(res);
         toast.success("Conta criada com sucesso");
@@ -63,7 +63,7 @@ const InputRegister = () => {
         <label>
           Digite seu CPF <p>{errors.cpf?.message}</p>
         </label>
-        <input type="text" placeholder="CPF" {...register("cpf")} />
+        <input type="number" placeholder="CPF" {...register("cpf")} />
         <label>
           Digite seu email <p>{errors.email?.message}</p>
         </label>

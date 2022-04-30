@@ -13,6 +13,9 @@ const clienteConstructor = require("../models/Cliente");
 
 const cliente = (app, bd) => {
   app.get("/clientes", (req, res) => {
+    const add = req.body;
+    console.log(add);
+
     bd.all(`SELECT * FROM CLIENTES`, (error, rows) => {
       if (error) {
         res.json("Erro ao selecionar o Banco");
@@ -39,13 +42,15 @@ const cliente = (app, bd) => {
   app.post("/register", (req, res) => {
     const add = req.body;
     console.log(add);
+
     bd.all(`INSERT INTO CLIENTES (NOME,CPF,EMAIL,SENHA) VALUES(?,?,?,?)`, [
       add.nome,
       add.cpf,
       add.email,
       add.senha,
     ]);
-    res.send("foi");
+    res.json({ msg: "This is CORS-enabled for all origins!" });
+    res.status(200).json("Usuário Cadastrado");
   });
 };
 
