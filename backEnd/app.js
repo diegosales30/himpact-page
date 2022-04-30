@@ -8,6 +8,14 @@ const app = express();
 
 app.use(express.json());
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,PUT, POST, DELETE");
+  app.use(cors());
+  next();
+});
+
+
 const ClienteController = require("./src/controllers/cliente_controllers");
 
 const bd = require("./src/infra/sq-litebd");
@@ -15,9 +23,4 @@ const bd = require("./src/infra/sq-litebd");
 ClienteController(app, bd);
 // FornecedorController(app)
 
-app.use((req, res, next) => {
-  res.header("Acesse-Control-Allow-Origin", "http://localhost/:4000");
-  app.use(cors());
-  next();
-});
 module.exports = app;

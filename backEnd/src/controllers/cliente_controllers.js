@@ -20,7 +20,8 @@ const cliente = (app, bd) => {
       if (error) {
         res.json("Erro ao selecionar o Banco");
       } else {
-        res.json({ "banco selecionado": rows });
+        res.status(200).json({ "banco selecionado": rows });
+        res.json({ msg: "This is CORS-enabled for all origins!" });
       }
     });
   });
@@ -50,7 +51,7 @@ const cliente = (app, bd) => {
       add.senha,
     ]);
     res.json({ msg: "This is CORS-enabled for all origins!" });
-    res.status(200).json("Usuário Cadastrado");
+    res.status(201).json("Usuário Cadastrado");
   });
 };
 
