@@ -27,14 +27,24 @@ const InputLogin = () => {
     resolver: yupResolver(schema),
   });
 
-  //const history = useHistory();
+  const history = useHistory();
 
-  const onSubmit = ({ email, senha }) => {
-    const user = { email, senha };
+  const onSubmit = (data) => {
+    //const user = { email, senha };
     axios
-      .get("localhost:4000/clientes", user)
-      .then((res) => console.log(res.data))
-      .catch((error) => console.log(error));
+      .get("https://jsonplaceholder.typicode.com/users", data)
+      .then((res) => {
+        if (res.status === 200) {
+          console.log(res.config);
+          toast.success("usuario logado");
+          setTimeout(() => {
+            return history.push("/home");
+          }, 2000);
+        }
+      })
+      .catch((error) => {
+        console.log("erro ao logar " + error);
+      });
   };
 
   return (

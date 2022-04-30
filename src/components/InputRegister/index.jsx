@@ -37,11 +37,11 @@ const InputRegister = () => {
 
   const history = useHistory();
 
-  const onSubmit = (data) => {
-    //const user = { nome, cpf, email, senha };
-    console.log(data);
+  const onSubmit = ({ nome, cpf, email, senha }) => {
+    const user = { nome, cpf, email, senha };
+    console.log(user);
     axios
-      .post("http://localhost:4000/register", data)
+      .post("https://jsonplaceholder.typicode.com/users", user)
       .then((res) => {
         console.log(res);
         toast.success("Conta criada com sucesso");
