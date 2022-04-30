@@ -1,11 +1,15 @@
 import { useHistory } from "react-router-dom";
 import { FiAlignCenter, FiSearch } from "react-icons/fi";
 import { ContainerMenu } from "./style";
+import { useState } from "react";
 
 const HeaderMenu = () => {
+  const [isSelected, setIselected] = useState([false]);
+
   const history = useHistory();
 
   const handleNavigation = (path) => {
+    setIselected(true);
     return history.push(path);
   };
 
@@ -20,20 +24,12 @@ const HeaderMenu = () => {
           <FiSearch />
         </div>
       </section>
-      <aside>
-        <div
-          className="item-navegacao"
-          onClick={() => handleNavigation("/home")}
-        >
-          Feed
-        </div>
-        <div
-          className="item-navegacao-ativo"
-          onClick={() => handleNavigation("/atividades")}
-        >
+      <div>
+        <button onClick={() => handleNavigation("/home")}>Feed</button>
+        <button onClick={() => handleNavigation("/atividades")}>
           Atividades
-        </div>
-      </aside>
+        </button>
+      </div>
     </ContainerMenu>
   );
 };
