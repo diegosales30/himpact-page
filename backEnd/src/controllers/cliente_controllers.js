@@ -12,7 +12,7 @@ const clienteConstructor = require("../models/Cliente");
 // }
 
 const cliente = (app, bd) => {
-  app.get("/clientes", (req, res) => {
+  app.get("/client", (req, res) => {
     const add = req.body;
     console.log(add);
 
