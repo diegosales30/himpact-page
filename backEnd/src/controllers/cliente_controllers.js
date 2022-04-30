@@ -42,7 +42,7 @@ const cliente = (app,bd) => {
         console.log(add)
         bd.all(`INSERT INTO CLIENTES (NOME,CPF,EMAIL,SENHA) VALUES(?,?,?,?)`, 
         [add.nome, add.cpf, add.email, add.senha])
-        res.send("foi")
+        res.status(200).json("Usuário Cadastrado")
     })
 
 }
