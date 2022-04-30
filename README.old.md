@@ -46,25 +46,17 @@ Entre na pasta do projeto:
 ```
 cd himpact-page
 ```
-Instale as dependencias FrontEnd:
+Instale as dependencias:
 ```
-yarn install
-yarn install axios
-yarn add react-icons
-yarn add styled-components
-yarn add react-toastify
-yarn add react-router-dom@5
-yarn add react-hook-form yup hookform/resolvers
-```
-Instale as dependencias BackEnd:
-```
-npm express
-npm nodemon
-npm sqlite3
+npm install
+npm install styled-components
+npm install axios
+npm install --save react-toastify 
+npm install react-router-dom
 ```
 Execute a aplicação:
 ```
-yarn start
+npm run start
 ```
 
 ## Linguagens e libs :books:

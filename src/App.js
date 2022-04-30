@@ -1,15 +1,26 @@
-import logo from './logo192.png';
-import './App.css';
+import { ToastContainer } from "react-toastify";
+import Routes from "./Routes";
+import GlobalStyle from "./Styles/global";
+import "react-toastify/dist/ReactToastify.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Himpact - o Hábito que impacta!</p>
-      </header>
+    <div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <Routes />
+      <GlobalStyle />
     </div>
   );
-}
+};
 
 export default App;
