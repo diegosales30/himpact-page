@@ -2,6 +2,7 @@ import { ContainerRegister, BoxLogo, BtnRegiterGoogle } from "./style";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { AiOutlineGooglePlus } from "react-icons/ai";
 
 const RegisterPage = () => {
   const history = useHistory();
@@ -27,7 +28,13 @@ const RegisterPage = () => {
         <button onClick={() => handleNavigation("/register/company")}>
           Cadastrar como Empresa
         </button>
-        <BtnRegiterGoogle>Cadastrar com Google</BtnRegiterGoogle>
+
+        <BtnRegiterGoogle>
+          <span>
+            <AiOutlineGooglePlus />
+          </span>
+          Cadastrar com Google
+        </BtnRegiterGoogle>
       </section>
       <aside>
         <Link to="/login">Faça login</Link>

@@ -13,7 +13,7 @@ import axios from "axios";
 const InputLogin = () => {
   const schema = yup.object().shape({
     email: yup.string().required("Campo obrigatório").email("Email inválido"),
-    password: yup
+    senha: yup
       .string()
       .min(8, "Mínimo  de 8 digitos")
       .required("Campo obrigatório"),
@@ -27,35 +27,44 @@ const InputLogin = () => {
     resolver: yupResolver(schema),
   });
 
-  //const history = useHistory();
+  const history = useHistory();
 
-  const onSubmit = ({ name, cpf, email, password }) => {
-    const user = { name, cpf, email, password };
+  const onSubmit = ({ email, senha }) => {
+    const user = { email, senha };
+
     console.log(user);
-    // axios
-    //   .post("endpoint aqui", user)
-    //   .then((_) => {
-    //     toast.success("Conta criada com sucesso");
-    //     return history.push("/login");
-    //   })
-    //   .catch((err) => {
-    //     toast.error("Erro ao criar conta, tente outro email");
-    //     console.log(err);
-    //   });
+    axios
+      .get("localhost:3001/clientes", user)
+      .then((res) => {
+        console.log(res);
+        toast.success("Logado com sucesso");
+        return history.push("/");
+      })
+      .catch((err) => {
+        toast.error("Email ou senha incorretos");
+        console.log(err);
+      });
   };
   return (
     <ContainerForm>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <p>{errors.email?.message}</p>
+        <label>
+          <p>{errors.email?.message}</p>
+        </label>
         <InputContainer>
           <FiUser />
-          <input type="text" placeholder="Email ou CNPJ" />
+          <input
+            type="text"
+            placeholder="Email ou CNPJ"
+            {...register("email")}
+          />
         </InputContainer>
-
+        <label>
+          <p>{errors.senha?.message}</p>
+        </label>
         <InputContainer>
-          <p>{errors.password?.message}</p>
           <FiLock />
-          <input type="password" placeholder="Senha" />
+          <input type="password" placeholder="Senha" {...register("senha")} />
         </InputContainer>
 
         <Link to="/register">Esqueceu a senha?</Link>

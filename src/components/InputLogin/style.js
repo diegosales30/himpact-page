@@ -5,7 +5,13 @@ export const ContainerForm = styled.div`
   form {
     display: flex;
     flex-direction: column;
-   
+
+    label {
+      p {
+        color: var(--red);
+      }
+    }
+
     
     a {
       p
@@ -57,6 +63,7 @@ export const InputContainer = styled.section`
   border-radius: 8px;
   padding: 12px;
   margin-top: 20px;
+
   input {
     width: 200px;
 

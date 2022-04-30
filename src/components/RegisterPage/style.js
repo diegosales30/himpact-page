@@ -63,6 +63,14 @@ export const ContainerRegister = styled.div`
   }
 `;
 export const BtnRegiterGoogle = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 35px;
+  }
   background: var(--red) !important;
 `;
 export const BoxLogo = styled.div`
