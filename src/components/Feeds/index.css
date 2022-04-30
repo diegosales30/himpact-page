@@ -1,0 +1,24 @@
+.feeds {
+    width: 20vw;
+    margin: auto;
+}
+
+.mini {
+    width: 43vw;
+    height: 15vh;
+    margin-left: 2vh;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    margin-top: -2vh;
+    border-radius: 10%;
+}
+
+.bannerfooter {
+    width: 90vw;
+    height: 10vh;
+    margin-left: 2vh;
+    margin-right: auto;
+    /* margin-bottom: 10vh;
+    margin-top: 20vh; */
+    border-radius: 10%;
+}
