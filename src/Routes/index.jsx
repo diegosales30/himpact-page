@@ -4,6 +4,8 @@ import RegisterUserPage from "../components/RegisterUserPage";
 import Landing from "../Pages/Landing";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import Atividades from "../Pages/Atividades";
+import Home from "../Pages/Home";
 
 const Routes = () => {
   return (
@@ -19,6 +21,12 @@ const Routes = () => {
       </Route>
       <Route path="/register/user">
         <RegisterUserPage />
+      </Route>
+      <Route path="/home">
+        <Home />
+      </Route>
+      <Route path="/atividades">
+        <Atividades />
       </Route>
     </Switch>
   );
