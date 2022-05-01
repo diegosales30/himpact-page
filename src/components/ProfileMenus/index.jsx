@@ -5,8 +5,14 @@ import { RiArrowRightLine, RiBallPenLine, RiGroupLine } from "react-icons/ri";
 import { VscBellDot, VscGear } from "react-icons/vsc";
 import { SiDatabricks } from "react-icons/si";
 import "./style.css";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const ProfileMenus = () => {
+  const history = useHistory();
+
+  const handleNavigation = (path) => {
+    return history.push(path);
+  };
   return (
     <ContainerProfileMenus>
       <section>
@@ -62,7 +68,10 @@ const ProfileMenus = () => {
         <aside>
           <MdLogout className="iconeMenu" />
           <p>Logout</p>
-          <RiArrowRightLine className="iconeMenu" />
+          <RiArrowRightLine
+            onClick={() => handleNavigation("/")}
+            className="iconeMenu"
+          />
         </aside>
       </section>
     </ContainerProfileMenus>
