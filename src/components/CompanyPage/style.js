@@ -37,22 +37,25 @@ export const ContainerPartnerCompany = styled.div`
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  overflow-y: scroll !important;
+
+  overflow-y: scroll;
   section {
-    height: 1000px;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 
     figure {
       margin-left: 35px;
       width: 130px;
-      height: 120px;
-      margin-bottom: 60px;
+      height: 80px;
+
       img {
+        cursor: pointer;
         margin: 0;
         width: 120px;
         height: 120px;
+        border-radius: 10px;
       }
       h1 {
         margin-left: 10px;

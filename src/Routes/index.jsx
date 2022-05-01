@@ -8,6 +8,7 @@ import Atividades from "../Pages/Atividades";
 import Home from "../Pages/Home";
 import Perfil from "../Pages/Perfil";
 import Company from "../Pages/Company";
+import CompanyDetails from "../Pages/CompanyDetails";
 
 const Routes = () => {
   return (
@@ -35,6 +36,9 @@ const Routes = () => {
       </Route>
       <Route path="/perfil/company">
         <Company />
+      </Route>
+      <Route path="/company/details">
+        <CompanyDetails />
       </Route>
     </Switch>
   );

@@ -9,13 +9,14 @@ import "./style.css";
 import { RiArrowLeftLine } from "react-icons/ri";
 import { useHistory } from "react-router-dom";
 
-import ifood from "../../assets/imgCompany/ifood.png";
+import ifood from "../../assets/imgCompany/ifoodImgpng.png";
 import ciet from "../../assets/imgCompany/ci&t.png";
 import fundaoEstudar from "../../assets/imgCompany/fundacaoEstudar.png";
 import stoneTech from "../../assets/imgCompany/stoneTech.png";
 import totvs from "../../assets/imgCompany/totvs.png";
 import memed from "../../assets/imgCompany/memed.png";
 import abstartups from "../../assets/imgCompany/abstartups.png";
+
 const CompanyPage = () => {
   const history = useHistory();
 
@@ -34,7 +35,7 @@ const CompanyPage = () => {
       </HeaderCompany>
       <ContainerPartnerCompany>
         <section>
-          <figure>
+          <figure onClick={() => handleNavigation("/company/details")}>
             <img src={ifood} alt="ifoof" />
             <h1>Ifood</h1>
           </figure>

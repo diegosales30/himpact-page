@@ -17,6 +17,7 @@ const tarefa = (app, bd) => {
         res.json({ data });
 
         /**
+        
         fiz umas alterações aqui no back para
         que eu recebesse o data como array de obj 
         para ficar melhor de fazer iteração no front
