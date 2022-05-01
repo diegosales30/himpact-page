@@ -40,10 +40,12 @@ const Tarefas = () => {
           Cursos para sua capacitação, ajudar o meio ambiente e receber
           créditos:
         </h3>
-        <img className="itemCurso" src={curso1} alt="banner" />
-        <img className="itemCurso" src={curso2} alt="banner" />
-        <img className="itemCurso" src={curso3} alt="cursos" />
-        <img className="itemCurso" src={curso4} alt="cursos" />
+        <div className="cursosConteiner">
+          <img className="itemCurso" src={curso1} alt="banner" />
+          <img className="itemCurso" src={curso2} alt="banner" />
+          <img className="itemCurso" src={curso3} alt="cursos" />
+          <img className="itemCurso" src={curso4} alt="cursos" />
+        </div>
       </div>
     </>
   );

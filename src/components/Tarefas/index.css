@@ -3,19 +3,22 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: wrap;
-  background-color: #02825b;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  color: white;
+  color: var(--tertiary-color);
+  ;
 }
 
 .itemCurso {
-  width: 50%;
-  margin: 10px auto;
+  width: 160px;
+  margin: 30px 10px 0px 3px;
   font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-weight: bold
+}
+
+.cursosConteiner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom:70px;
 }

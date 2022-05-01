@@ -15,10 +15,10 @@ export const HeaderCompany = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 360px;
   height: 166px;
   background: var(--whiteF3);
   box-shadow: 3px 11px 42px -7px rgba(128, 128, 128, 0.3);
+  padding: 0px 10px;
 
   h1 {
     font-family: "Inter";
@@ -37,6 +37,7 @@ export const ContainerPartnerCompany = styled.div`
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  margin: 20px auto 60px;
 
   overflow-y: scroll;
   section {

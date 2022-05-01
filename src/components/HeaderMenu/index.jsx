@@ -11,7 +11,6 @@ const HeaderMenu = () => {
     setIsActive(!isActive);
     return history.push(path);
   };
-  console.log(isActive);
 
   return (
     <ContainerMenu>
@@ -25,8 +24,8 @@ const HeaderMenu = () => {
         </div>
       </section>
       <div>
-        <button onClick={() => handleNavigation("/home")}>Feed</button>
-        <button onClick={() => handleNavigation("/atividades")}>
+        <button page={"feed"} onClick={() => handleNavigation("/home")}>Feed</button>
+        <button page={"atividade"} onClick={() => handleNavigation("/atividades")}>
           Atividades
         </button>
       </div>

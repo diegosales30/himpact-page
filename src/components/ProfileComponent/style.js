@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerProfile = styled.div`
-  width: 360px;
+  width: 100vw;
   height: 166px;
   left: 0px;
   top: 0px;
@@ -59,6 +59,7 @@ export const ContainerProfile = styled.div`
       width: 30px;
       height: 30px;
       cursor: pointer;
+      margin-right: 10px;
     }
   }
 `;

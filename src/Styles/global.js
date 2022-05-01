@@ -8,8 +8,10 @@ export default createGlobalStyle`
     box-sizing: border-box
   }
   :root{
+    --primary-color:rgba(249, 249, 249, 1);
+    --secundary-color: rgba(2, 130, 91, 1);
+    --tertiary-color: rgba(57, 57, 57, 1);
     --green: #02825B;
-;   
     --white: #E5E5E5;
     --green-clear: #72DAAD4D;
     --grey05: rgba(155, 155, 155, 0.5);
