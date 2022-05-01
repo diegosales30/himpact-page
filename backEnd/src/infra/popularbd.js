@@ -73,10 +73,60 @@ function populaTabelaFornece() {
   });
 }
 
+//==== TAREFAS
+const TAREFAS_SCHEMA = `
+CREATE TABLE IF NOT EXISTS "TAREFAS" (
+    "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "TITULO" TEXT,
+    "DESCRICAO" TEXT
+  );`;
+
+const ADD_TAREFAS_DATA = `INSERT INTO TAREFAS (ID, TITULO, DESCRICAO)
+VALUES 
+       (1, 'Conta de água' , 'Regular a água do banho' ),
+       (2, 'Separar o lixo' , 'Separar o lixo e destinar para a reciclagem'),
+       (3, 'Guardar resíduos' , 'Guardar resíduos no bolso ou mochila até achar uma lixeira'),
+       (4, 'Reutilize' , 'Reutilize potes de plástico'),
+       (5, 'Carne demais' , 'Diminuir o consumo de carne'),
+       (6, 'Bom apetite' , 'Não desperdiçe comida'),
+       (7, 'Informe-se antes de comprar' , 'Pesquise e procure comprar de empresas que possuem práticas sustentáveis e não prejudicam o meio ambiente' ),
+       (8, 'Fazer compostagem' , 'Faça compostagem do resto dos alimentos'),
+       (9, 'Ecobags' , 'Utilizar ecobags'),
+       (10, 'Sacolas plásticas' , 'Dispensar o uso de sacolas plásticas'),
+       (11, 'Canudos de plástico' , 'Não utilizar canudos de plástico'),
+       (12, 'Não utilizar copos plásticos' , 'Não utilizar copos plásticos - troque por uma caneca/xicara'),
+       (13, 'Tenha sua árvore' , 'Separe o material reciclável do orgânico' ),
+       (14, 'Hora de Separar' , 'Separe o material reciclável do orgânico'),
+       (15, 'Destinação correta' , 'Faça a destinação correta de pilhas, celulares e eletrônicos'),
+       (16, 'Tire o pé do acelerador' , 'Diminua a utilização de carro'),
+       (17, 'Carona' , 'Caso use o carro, vá de carona'),
+       (18, 'Comercio Local' , 'Consuma produto de um comercio local'),
+       (19, 'Selo Verde' , 'Priorize produtos sustentáveis' ),
+       (20, 'Squeeze' , 'Tenha uma garrafa (reutilizável) para chamar de sua'),
+       (21, 'Energia elétrica' , 'Evite o desperdício de energia elétrica'),
+       (22, 'Sacola de Compras' , 'Leve sua própria sacola quando for fazer compras'),
+       (23, 'Não jogue óleo ' , 'Não jogue óleo de cozinha no ralo da pia'),
+       (24, 'Reutilize' , 'Reutilize embalagens e use refil')
+`;
+
+function criaTabelaTarefas() {
+  db.run(TAREFAS_SCHEMA, (error) => {
+    if (error) console.log("Erro ao criar tabela de Fornecedores");
+  });
+}
+
+function populaTabelaTarefas() {
+  db.run(ADD_TAREFAS_DATA, (error) => {
+    if (error) console.log("Erro ao popular tabela de Tarefas");
+  });
+}
+
 db.serialize(() => {
-  // criaTabelaCli();
-  //populaTabelaCli();
+  criaTabelaTarefas()
+  populaTabelaTarefas()
   // criaTabelaFornece();
   // populaTabelaFornece();
-  criasoumnome();
 });
+
+
+

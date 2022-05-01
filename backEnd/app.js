@@ -17,10 +17,11 @@ app.use((req, res, next) => {
 
 
 const ClienteController = require("./src/controllers/cliente_controllers");
-
+const TarefaController = require("./src/controllers/tarefas_controllers");
 const bd = require("./src/infra/sq-litebd");
 
 ClienteController(app, bd);
+TarefaController(app, bd);
 // FornecedorController(app)
 
 module.exports = app;
