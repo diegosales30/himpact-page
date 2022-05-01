@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerProfile = styled.div`
-  width: 100vw;
+  width: 393px;
   height: 166px;
-  left: 0px;
-  top: 0px;
-
   background: #f9f9f9;
   box-shadow: 3px 11px 42px -7px rgba(128, 128, 128, 0.3);
 

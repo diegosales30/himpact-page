@@ -5,10 +5,8 @@ const CompanyDetailsPage = () => {
   return (
     <ContainerCompanyDetails>
       <HeaderCompanyDetails>
-        <section>
+        <section className="containerIcon">
           <RiArrowLeftLine className="iconArrow" />
-        </section>
-        <section>
           <RiSearchLine className="iconSearch" />
         </section>
       </HeaderCompanyDetails>
