@@ -2,15 +2,6 @@ const res = require("express/lib/response");
 const bd = require("../infra/sq-litebd");
 const clienteConstructor = require("../models/Cliente");
 
-// class ClienteController {
-
-//     static listaClientes = (req,res) => {
-//         clientes.find((err, clientes) => {
-//             res.status(200).json(clientes)
-//         })
-//     }
-// }
-
 const cliente = (app, bd) => {
   app.get("/clientes", (req, res) => {
     const add = req.body;
@@ -21,7 +12,7 @@ const cliente = (app, bd) => {
         res.json("Erro ao selecionar o Banco");
       } else {
         res.status(200).json({ "banco selecionado": rows });
-        res.json({ msg: "This is CORS-enabled for all origins!" });
+        
       }
     });
   });
@@ -50,7 +41,7 @@ const cliente = (app, bd) => {
       add.email,
       add.senha,
     ]);
-    res.json({ msg: "This is CORS-enabled for all origins!" });
+    
     res.status(201).json("Usuário Cadastrado");
   });
 };
