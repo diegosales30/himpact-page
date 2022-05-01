@@ -10,7 +10,6 @@ import { toast } from "react-toastify";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import axios from "axios";
 
-
 const InputLogin = () => {
   const schema = yup.object().shape({
     email: yup.string().required("Campo obrigatório").email("Email inválido"),
@@ -28,26 +27,25 @@ const InputLogin = () => {
     resolver: yupResolver(schema),
   });
 
-  //const history = useHistory();
-  
+  const history = useHistory();
+
   const onSubmit = (data) => {
     //const user = { email, senha };
     axios
-      .get("http://localhost:4000/clientes", data)
+      .get("https://jsonplaceholder.typicode.com/users", data)
       .then((res) => {
         if (res.status === 200) {
           console.log(res);
           toast.success("usuario logado");
-          // setTimeout(() => {
-          //   return history.push("/home");
-          // }, 2000);
+          setTimeout(() => {
+            return history.push("/home");
+          }, 2000);
         }
       })
-      .catch((error) => { 
+      .catch((error) => {
         console.log("erro ao logar " + error);
       });
   };
-
 
   return (
     <ContainerForm>
@@ -81,5 +79,3 @@ const InputLogin = () => {
   );
 };
 export default InputLogin;
-
-
