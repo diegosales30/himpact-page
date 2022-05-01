@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import curso1 from "../../assets/curso1.png";
 import curso2 from "../../assets/curso2.png";
 import curso3 from "../../assets/curso3.png";
@@ -9,10 +10,17 @@ import "./index.css";
 import { ContainerTarefas, ListTarefas } from "./style";
 
 const Tarefas = () => {
+  const [isActive, setIsActive] = useState(false);
+  const history = useHistory();
   const [todo, setTodo] = useState([]);
   // const [obj, setObjs] = useState([todo]);
   // //let obj = [];
   // let obj1 = [...todo];
+
+  const handleNavigation = (path) => {
+    setIsActive(!isActive);
+    return history.push(path);
+  };
 
   useEffect(() => {
     axios
@@ -41,10 +49,10 @@ const Tarefas = () => {
           créditos:
         </h3>
         <div className="cursosConteiner">
-          <img className="itemCurso" src={curso1} alt="banner" />
-          <img className="itemCurso" src={curso2} alt="banner" />
-          <img className="itemCurso" src={curso3} alt="cursos" />
-          <img className="itemCurso" src={curso4} alt="cursos" />
+          <img className="itemCurso" src={curso1} alt="banner" onClick={() => handleNavigation("/page-curso")}/>
+          <img className="itemCurso" src={curso2} alt="banner" onClick={() => handleNavigation("/page-curso")}/>
+          <img className="itemCurso" src={curso3} alt="cursos" onClick={() => handleNavigation("/page-curso")}/>
+          <img className="itemCurso" src={curso4} alt="cursos" onClick={() => handleNavigation("/page-curso")}/>
         </div>
       </div>
     </>

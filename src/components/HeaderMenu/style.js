@@ -25,6 +25,10 @@ export const ContainerMenu = styled.div`
       color: var(--green);
     }
   }
+  .selecionado {
+    border-bottom: 3px solid var(--green)
+    background-color: var(--green);
+  }
   div {
     width: 100%;
     margin-bottom:5px;
