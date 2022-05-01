@@ -1,25 +1,90 @@
 .containerIcon {
   width: 360px;
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
   height: 200px;
   margin: auto;
 }
 .iconArrow {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  margin-left: 20px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
   margin-top: 30px;
-  top: 0;
   color: #f9f9f9;
 }
 
 .iconSearch {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  margin-left: 20px;
+  width: 35px;
+  height: 35px;
+
   margin-top: 30px;
 
-  color: black;
+  color: #f9f9f9;
+}
+
+.contentBox {
+  width: 100vw;
+
+  max-width: 394px;
+}
+.contentBox > p > a {
+  color: #5cc398;
+}
+.contentBox > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 10px;
+  color: #393939;
+}
+
+.contentBox > h3 {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 50px;
+  color: #393939;
+}
+/* box promo */
+
+.contentBoxPromo {
+  margin-top: 5px;
+
+  width: 100vw;
+  height: 90vh;
+  max-width: 394px;
+}
+.contentBoxPromo > section {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  overflow-y: scroll;
+}
+.contentBoxPromo > section > div {
+  margin-top: 10px;
+  width: 150px;
+  height: 155px;
+  background: #5cc398;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contentBoxPromo > section > div:hover {
+  background: #ea1d2bcb;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.452);
+  cursor: pointer;
+}
+
+.contentBoxPromo > section > div > p {
+  color: white;
+  text-align: center;
 }
