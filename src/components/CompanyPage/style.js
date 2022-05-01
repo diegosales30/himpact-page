@@ -19,6 +19,7 @@ export const HeaderCompany = styled.div`
   height: 166px;
   background: var(--whiteF3);
   box-shadow: 3px 11px 42px -7px rgba(128, 128, 128, 0.3);
+
   h1 {
     font-family: "Inter";
     font-style: normal;
@@ -29,5 +30,41 @@ export const HeaderCompany = styled.div`
     align-items: center;
 
     color: var(--green);
+  }
+`;
+export const ContainerPartnerCompany = styled.div`
+  width: 360px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-y: scroll !important;
+  section {
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+
+    figure {
+      margin-left: 35px;
+      width: 130px;
+      height: 120px;
+      margin-bottom: 60px;
+      img {
+        margin: 0;
+        width: 120px;
+        height: 120px;
+      }
+      h1 {
+        margin-left: 10px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #393939;
+      }
+    }
   }
 `;
