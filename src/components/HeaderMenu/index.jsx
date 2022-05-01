@@ -6,6 +6,7 @@ import { useState } from "react";
 const HeaderMenu = () => {
   const [isActive, setIsActive] = useState(false);
   const history = useHistory();
+  const local = useHistory().location.pathname;
 
   const handleNavigation = (path) => {
     setIsActive(!isActive);
@@ -24,9 +25,11 @@ const HeaderMenu = () => {
         </div>
       </section>
       <div>
-        <button page={"feed"} onClick={() => handleNavigation("/home")}>Feed</button>
+        <button page={"feed"} onClick={() => handleNavigation("/home")}>
+          <span className={(local === '/atividades') ? 'selecionado' : ''}>Feed</span>
+        </button>
         <button page={"atividade"} onClick={() => handleNavigation("/atividades")}>
-          Atividades
+        <span className={(local === '/home') ? 'selecionado' : ''}>Atividades</span>
         </button>
       </div>
     </ContainerMenu>

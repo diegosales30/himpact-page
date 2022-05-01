@@ -1,25 +1,20 @@
 import styled from "styled-components";
 import logoIfood from "../../assets/imgCompany/ifoodbackground.png";
 export const ContainerCompanyDetails = styled.div`
-  border: 1px solid red;
   width: 100vw;
-  height: 100vh;
+
   max-width: 400px;
   margin: auto;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.418);
 `;
 
 export const HeaderCompanyDetails = styled.div`
   width: 100vw;
-  height: 200px;
+  height: 250px;
   max-width: 400px;
   background: url(${logoIfood}) no-repeat center #ea1d2c;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  section {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    color: #f9f9f9;
-  }
+  border-radius: 0px 0px 20px 20px;
 `;

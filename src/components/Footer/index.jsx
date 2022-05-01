@@ -16,7 +16,6 @@ const Footer = () => {
 
   const Navbar = {
     Wrapper: styled.nav`
-      fixed: bottom;
       width: 100%;
       flex: 1;
       align-self: flex-start;
