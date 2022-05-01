@@ -4,21 +4,15 @@
 }
 
 .mini {
-    width: 43vw;
-    height: 15vh;
-    margin-left: 2vh;
-    margin-right: auto;
-    margin-bottom: 2vh;
-    margin-top: -2vh;
+    width: 160px;
+    height: 160px;
+    margin: 0px 12px 20px 14px;
     border-radius: 10%;
 }
 
 .bannerfooter {
-    width: 90vw;
-    height: 10vh;
-    margin-left: 2vh;
-    margin-right: auto;
-    /* margin-bottom: 10vh;
-    margin-top: 20vh; */
-    border-radius: 10%;
+    width: 92vw;
+    height: 120px;
+    margin: 0px auto 70px 2.3vh;
+    border-radius: 10px;
 }

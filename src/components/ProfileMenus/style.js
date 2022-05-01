@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerProfileMenus = styled.div`
-
+    height: 100vh;
+    overflow-x: auto;
     section {
       width: 360px;
       height: 70px;

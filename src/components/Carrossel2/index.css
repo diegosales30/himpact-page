@@ -1,8 +1,5 @@
 .carousel2 {
     width: 90vw;
     height: 15vh;
-    margin-top: 2vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10vh;
+    margin: 0px auto 90px;
 }

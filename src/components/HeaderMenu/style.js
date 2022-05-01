@@ -13,6 +13,7 @@ export const ContainerMenu = styled.div`
   justify-content: flex-end;
   background-color: white;
   box-shadow: 1px 0px 10px 1px rgba(8, 121, 8, 0.348);
+  z-index: 3;
   section {
     width: 100vw;
     display: flex;
@@ -50,10 +51,6 @@ export const ContainerMenu = styled.div`
       cursor:pointer;
       border-bottom: 3px solid var(--green)
       };
-    }
-      
-    }
+    }  
   }
-
-
 `;

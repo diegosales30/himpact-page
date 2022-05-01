@@ -3,13 +3,10 @@ import styled from "styled-components";
 export const ContainerTarefas = styled.div`
   width: 95%;
   height: 300px;
-  background-color: var(--green);
+  background-color: var(--secundary-color);
   border-radius: 5px;
   padding: 10px;
-  margin-top: 18vh;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 160px auto 10px;
   align-items: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.384);
   h3 {
@@ -17,7 +14,8 @@ export const ContainerTarefas = styled.div`
     font-style: normal;
     font-weight: 700;
     text-align: center;
-    color: rgb(12, 12, 12);
+    color: var(--primary-color);
+
   }
 `;
 export const ListTarefas = styled.div`
