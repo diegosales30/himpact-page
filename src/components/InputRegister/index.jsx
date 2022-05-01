@@ -39,9 +39,10 @@ const InputRegister = () => {
 
   const onSubmit = (data) => {
     //const user = { nome, cpf, email, senha };
+
     console.log(data);
     axios
-      .post("https://jsonplaceholder.typicode.com/users", data)
+      .post("http://localhost:4000/register", data)
       .then((res) => {
         console.log(res);
         toast.success("Conta criada com sucesso");
@@ -63,7 +64,7 @@ const InputRegister = () => {
         <label>
           Digite seu CPF <p>{errors.cpf?.message}</p>
         </label>
-        <input type="number" placeholder="CPF" {...register("cpf")} />
+        <input type="text" placeholder="CPF" {...register("cpf")} />
         <label>
           Digite seu email <p>{errors.email?.message}</p>
         </label>

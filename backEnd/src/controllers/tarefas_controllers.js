@@ -4,26 +4,30 @@ const tarefasConstructor = require("../models/Tarefa");
 
 const tarefa = (app, bd) => {
   app.get("/tarefas", (req, res) => {
-    
-   
     bd.all(`SELECT * FROM TAREFAS`, (error, rows) => {
       if (error) {
         res.json("Erro ao selecionar o Banco");
       } else {
-          const a = Math.floor(Math.random() * rows.length )
-          const b = Math.floor(Math.random() * rows.length )
-          const c = Math.floor(Math.random() * rows.length )
-          const d = Math.floor(Math.random() * rows.length )
-          
-        //   const embaralha = [rows[a], rows[b], rows[c], rows[d]]
-
-          const emb1 = rows[a];
-          const emb2 = rows[b];
-          const emb3 = rows[c];
-          const emb4 = rows[d];
-         
+        const a = Math.floor(Math.random() * rows.length);
+        const b = Math.floor(Math.random() * rows.length);
+        const c = Math.floor(Math.random() * rows.length);
+        const d = Math.floor(Math.random() * rows.length);
+        const data = [rows[a], rows[b], rows[c], rows[d]];
         res.status(200);
-        res.json({ "banco selecionado": emb1, emb2, emb3,emb4 });
+        res.json({ data });
+
+        /**
+        fiz umas alterações aqui no back para
+        que eu recebesse o data como array de obj 
+        para ficar melhor de fazer iteração no front
+        ....ywhw
+        
+         */
+        // const emb1 = rows[a];
+        // const emb2 = rows[b];
+        // const emb3 = rows[c];
+        // const emb4 = rows[d];
+        // emb1, emb2, emb3, emb4
       }
     });
   });
@@ -41,5 +45,5 @@ const tarefa = (app, bd) => {
       }
     });
   });
-}
-module.exports = tarefa
+};
+module.exports = tarefa;

@@ -31,8 +31,9 @@ const InputLogin = () => {
 
   const onSubmit = (data) => {
     //const user = { email, senha };
+
     axios
-      .get("https://jsonplaceholder.typicode.com/users", data)
+      .get("http://localhost:4000/clientes", data)
       .then((res) => {
         if (res.status === 200) {
           console.log(res);
