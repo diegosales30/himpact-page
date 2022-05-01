@@ -9,7 +9,7 @@ export default createGlobalStyle`
   }
   :root{
     --green: #02825B;
-;
+;   --whiteF3 #f3f3f3
     --white: #E5E5E5;
     --green-clear: #72DAAD4D;
     --grey05: rgba(155, 155, 155, 0.5);

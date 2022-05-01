@@ -7,6 +7,7 @@ import Register from "../Pages/Register";
 import Atividades from "../Pages/Atividades";
 import Home from "../Pages/Home";
 import Perfil from "../Pages/Perfil";
+import Company from "../Pages/Company";
 
 const Routes = () => {
   return (
@@ -31,6 +32,9 @@ const Routes = () => {
       </Route>
       <Route path="/perfil/user">
         <Perfil />
+      </Route>
+      <Route path="/perfil/company">
+        <Company />
       </Route>
     </Switch>
   );

@@ -30,6 +30,7 @@ export const ContainerMenu = styled.div`
     display: flex;
     justify-content: space-around;
     button{
+      
       width: 100px;
       height: 50px;
       border: none;
@@ -47,9 +48,12 @@ export const ContainerMenu = styled.div`
       
       &:hover{
       cursor:pointer;
-      border-bottom: 3px solid var(--green);
+      border-bottom: 3px solid var(--green)
+      };
     }
       
     }
   }
+
+
 `;

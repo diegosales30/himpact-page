@@ -44,7 +44,7 @@ const ProfileMenus = () => {
         </aside>
       </section>
       <section>
-        <aside>
+        <aside onClick={() => handleNavigation("/perfil/company")}>
           <SiDatabricks className="iconeMenu" />
           <p>Empresas parceiras</p>
           <RiArrowRightLine className="iconeMenu" />
@@ -65,13 +65,10 @@ const ProfileMenus = () => {
         </aside>
       </section>
       <section>
-        <aside>
+        <aside onClick={() => handleNavigation("/")}>
           <MdLogout className="iconeMenu" />
           <p>Logout</p>
-          <RiArrowRightLine
-            onClick={() => handleNavigation("/")}
-            className="iconeMenu"
-          />
+          <RiArrowRightLine className="iconeMenu" />
         </aside>
       </section>
     </ContainerProfileMenus>

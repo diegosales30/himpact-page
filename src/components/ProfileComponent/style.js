@@ -47,9 +47,9 @@ export const ContainerProfile = styled.div`
     cursor: pointer;
     margin-left: 10px;
     img {
-      border: 1px solid green;
+      border: 2px solid var(--green);
       background: var(--green);
-      width: 68px;
+      width: 65px;
       height: 65px;
       border-radius: 55%;
     }

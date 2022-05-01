@@ -4,11 +4,14 @@ import { ContainerMenu } from "./style";
 import { useState } from "react";
 
 const HeaderMenu = () => {
+  const [isActive, setIsActive] = useState(false);
   const history = useHistory();
 
   const handleNavigation = (path) => {
+    setIsActive(!isActive);
     return history.push(path);
   };
+  console.log(isActive);
 
   return (
     <ContainerMenu>
