@@ -10,8 +10,13 @@ const Home = () => {
   return (
     <ContainerFeed>
       <HeaderMenu />
-      <FeedCarousel1 />
-      <FeedCarousel2 />
+      <div>
+        <FeedCarousel1 />
+      </div>
+      <div>
+        <FeedCarousel2 />
+      </div>
+
       <Feeds />
       <Footer />
     </ContainerFeed>

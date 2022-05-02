@@ -5,7 +5,7 @@ import modulo2 from "../../assets/modulo2.png";
 import modulo3 from "../../assets/modulo3.png";
 import modulo4 from "../../assets/modulo4.png";
 import "./index.css";
-import { ContainerTarefas } from "./style";
+import { ContainerCurso, ContainerTarefas } from "./style";
 import HeaderMenu from "../../components/HeaderMenu";
 import Footer from "../../components/Footer";
 
@@ -19,7 +19,7 @@ const PageCurso = () => {
   };
 
   return (
-    <>
+    <ContainerCurso>
       <HeaderMenu />
       <h1 className="titulo">Curso Empreendedorismo</h1>
       <ContainerTarefas className="listaTarefas">
@@ -32,10 +32,10 @@ const PageCurso = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-      <h3>Pontos que você adquiri ao concluir este Curso = 50 HIM</h3>
+        <h3>Pontos que você adquiri ao concluir este Curso = 50 HIM</h3>
       </ContainerTarefas>
       <div className="cursosCapacitacao">
-      <h1 className="modulos">Módulos:</h1>
+        <h1 className="modulos">Módulos:</h1>
         <div className="cursosConteiner">
           <img
             className="itemCurso"
@@ -64,7 +64,7 @@ const PageCurso = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </ContainerCurso>
   );
 };
 export default PageCurso;
