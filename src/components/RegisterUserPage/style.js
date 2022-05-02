@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ContainerRegisterUser = styled.div`
   width: 100vw;
   height: 100vh;
-  max-width: 400px;
+  max-width: 420px;
+  max-height: 896px;
   margin: auto;
   background: var(--white);
   display: flex;

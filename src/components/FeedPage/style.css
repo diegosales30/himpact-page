@@ -1,0 +1,7 @@
+.containerFeed {
+  width: 100vw;
+  height: 900px;
+  max-width: 420px;
+  margin: auto;
+  border: 1px solid red;
+}

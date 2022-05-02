@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const ContainerTarefas = styled.div`
-  width: 95%;
+  width: 100vw;
   height: 300px;
+  max-width: 420px;
+  margin: auto;
   background-color: var(--secundary-color);
   border-radius: 5px;
   padding: 10px;
@@ -15,11 +17,10 @@ export const ContainerTarefas = styled.div`
     font-weight: 700;
     text-align: center;
     color: var(--primary-color);
-
   }
 `;
 export const ListTarefas = styled.div`
-  width: 90vw;
+  width: 390px;
   height: 50px;
   border-bottom: 1px solid black;
   display: flex;

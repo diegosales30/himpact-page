@@ -1,18 +1,21 @@
 .feeds {
-    width: 20vw;
-    margin: auto;
+  width: 20vw;
+  margin: auto;
 }
 
 .mini {
-    width: 160px;
-    height: 160px;
-    margin: 0px 12px 20px 14px;
-    border-radius: 10%;
+  width: 160px;
+  height: 160px;
+  margin: 0px 12px 20px 14px;
+  border-radius: 10%;
 }
 
 .bannerfooter {
-    width: 92vw;
-    height: 120px;
-    margin: 0px auto 70px 2.3vh;
-    border-radius: 10px;
+  width: 380px;
+  height: 120px;
+  margin: 0px auto 70px 2.3vh;
+  border-radius: 10px;
+}
+.feeds-container {
+  margin: 0px auto 10px 2.3vh;
 }

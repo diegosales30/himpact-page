@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerCompany = styled.div`
   width: 100vw;
   height: 100vh;
-  max-width: 400px;
+  max-width: 420px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ export const ContainerCompany = styled.div`
 `;
 
 export const HeaderCompany = styled.div`
-  width: 100vw;
+  width: 380px;
   display: flex;
   justify-content: space-between;
   align-items: center;

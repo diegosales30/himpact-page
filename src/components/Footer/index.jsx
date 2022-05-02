@@ -63,7 +63,10 @@ const Footer = () => {
             />
           </Navbar.Logo>
           <Navbar.Logo>
-            <FiPackage className="tamanhoIcone" />
+            <FiPackage
+              onClick={() => handleNavigation("/perfil/company")}
+              className="tamanhoIcone"
+            />
           </Navbar.Logo>
           <Navbar.Logo>
             <FiUser

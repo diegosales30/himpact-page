@@ -1,11 +1,11 @@
 .carousel1 {
-    width: 90vw;
-    height: 8vh;
-    margin: 150px auto 120px;
+  width: 380px;
+  height: 8vh;
+  margin: 150px auto 120px;
 }
 
 .borda {
-    border-bottom: 1px strech gray;
-    width: 100%;
-    height: 100%;
+  border-bottom: 1px strech gray;
+  width: 100%;
+  height: 100%;
 }

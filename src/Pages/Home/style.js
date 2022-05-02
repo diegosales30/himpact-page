@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerFeed = styled.div`
-  width: 375vw;
+  width: 100vw;
   height: 900px;
-  max-width: 400px;
+  max-width: 420px;
+  margin: auto;
 `;
