@@ -1,25 +1,29 @@
-import { useState, useRef } from "react";
-import { Map, TileLayer } from "react-leaflet";
-import { maptiler } from "../../api/constants"
+import React from "react";
 
-export const MapPage = () => {
-    const [center, setCenter] = useState({ lat: 13.084622, long: 80.248357 })
-    const zoomLevel = 8;
-    const mapReference = useRef()
+const MapPage = () => {
+
+    // const exibeIframe = (cep) => {
+    //     document
+    //       .querySelector("#iframe")
+    //       .setAttribute(
+    //         "src",
+    //         `https://www.google.com.br/maps?q=${cep},%20Brasil&output=embed`
+    //       );
+    //   }
 
     return(
         <>
-            <Map
-                center={center}
-                zoom={zoomLevel}
-                reference={mapReference}
-            >
-                <TileLayer
-                    url={maptiler.url}
-                    attr={maptiler.attr}
-                >
-                </TileLayer>
-            </Map>
+            <iframe 
+                src="https://www.google.com.br/maps?q=41205-000,%20Brasil&output=embed" 
+                frameborder="0" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                tabindex="0" 
+                id="iframe"
+                title="map">
+            </iframe>
         </>
     )
 }
+
+export default MapPage;
