@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ContainerMenu = styled.div`
   position: fixed;
-  border=bottom: 2px solid 
-  width: 393px;
+  width: 100vw;
+  max-width: 420px;
   height: 140px;
   margin-top: 20px;
   margin: 0;
@@ -16,32 +16,31 @@ export const ContainerMenu = styled.div`
   z-index: 3;
   section {
     width: 100vw;
+    max-width: 420px;
     display: flex;
     justify-content: space-around;
     height: auto;
     font-size: x-large;
-    margin-bottom:25px;
+    margin-bottom: 25px;
     h4 {
       color: var(--green);
     }
   }
-  .selecionado {
-    border-bottom: 3px solid var(--green)
-    background-color: var(--green);
-  }
+
   div {
     width: 100%;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-around;
-    button{
-      
+    button {
       width: 100px;
       height: 50px;
       border: none;
       background: white;
-      border: 1px solid red {}
-      font-family: 'Inter';
+      border: 1px solid red {
+
+      }
+      font-family: "Inter";
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -50,11 +49,11 @@ export const ContainerMenu = styled.div`
       justify-content: center;
       align-items: center;
       color: rgba(57, 57, 57, 0.6);
-      
-      &:hover{
-      cursor:pointer;
-      border-bottom: 3px solid var(--green)
-      };
-    }  
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid var(--green);
+      }
+    }
   }
 `;

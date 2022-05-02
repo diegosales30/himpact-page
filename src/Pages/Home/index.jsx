@@ -4,16 +4,22 @@ import Feeds from "../../components/Feeds";
 import Footer from "../../components/Footer";
 
 import HeaderMenu from "../../components/HeaderMenu";
+import { ContainerFeed } from "./style";
 
 const Home = () => {
   return (
-    <>
+    <ContainerFeed>
       <HeaderMenu />
-      <FeedCarousel1 />
-      <FeedCarousel2 />
+      <div>
+        <FeedCarousel1 />
+      </div>
+      <div>
+        <FeedCarousel2 />
+      </div>
+
       <Feeds />
       <Footer />
-    </>
+    </ContainerFeed>
   );
 };
 export default Home;

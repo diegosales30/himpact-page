@@ -1,8 +1,12 @@
 import styled from "styled-components";
-
+export const ContainerCurso = styled.div`
+  width: 100vw;
+  height: 100vh;
+  max-width: 420px;
+  margin: auto;
+`;
 export const ContainerTarefas = styled.div`
-  width: 95%;
-  height: 300px;
+  margin: auto;
   background-color: var(--secundary-color);
   border-radius: 5px;
   padding: 10px;
@@ -15,7 +19,6 @@ export const ContainerTarefas = styled.div`
     font-weight: 700;
     text-align: center;
     color: var(--primary-color);
-
   }
 `;
 export const ListTarefas = styled.div`

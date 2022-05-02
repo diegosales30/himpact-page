@@ -13,9 +13,6 @@ const Tarefas = () => {
   const [isActive, setIsActive] = useState(false);
   const history = useHistory();
   const [todo, setTodo] = useState([]);
-  // const [obj, setObjs] = useState([todo]);
-  // //let obj = [];
-  // let obj1 = [...todo];
 
   const handleNavigation = (path) => {
     setIsActive(!isActive);
@@ -49,10 +46,30 @@ const Tarefas = () => {
           créditos:
         </h3>
         <div className="cursosConteiner">
-          <img className="itemCurso" src={curso1} alt="banner" onClick={() => handleNavigation("/page-curso")}/>
-          <img className="itemCurso" src={curso2} alt="banner" onClick={() => handleNavigation("/page-curso")}/>
-          <img className="itemCurso" src={curso3} alt="cursos" onClick={() => handleNavigation("/page-curso")}/>
-          <img className="itemCurso" src={curso4} alt="cursos" onClick={() => handleNavigation("/page-curso")}/>
+          <img
+            className="itemCurso"
+            src={curso1}
+            alt="banner"
+            onClick={() => handleNavigation("/page-curso")}
+          />
+          <img
+            className="itemCurso"
+            src={curso2}
+            alt="banner"
+            onClick={() => handleNavigation("/page-curso")}
+          />
+          <img
+            className="itemCurso"
+            src={curso3}
+            alt="cursos"
+            onClick={() => handleNavigation("/page-curso")}
+          />
+          <img
+            className="itemCurso"
+            src={curso4}
+            alt="cursos"
+            onClick={() => handleNavigation("/page-curso")}
+          />
         </div>
       </div>
     </>

@@ -5,20 +5,30 @@
   align-items: wrap;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  text-align: center;
   color: var(--tertiary-color);
-  ;
+
+  width: 100vw;
+  max-width: 420px;
+  margin: auto;
 }
 
 .itemCurso {
   width: 160px;
-  margin: 30px 10px 0px 3px;
+  margin: 30px 10px 0px 20px;
   font-size: 20px;
-  font-weight: bold
+  font-weight: bold;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.404);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.itemCurso:hover {
+  transform: translateY(-5px);
+  border-radius: 5px;
 }
 
 .cursosConteiner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom:70px;
+  margin-bottom: 70px;
 }
