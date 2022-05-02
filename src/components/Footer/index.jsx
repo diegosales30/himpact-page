@@ -45,6 +45,11 @@ const Footer = () => {
     return history.push(path);
   };
 
+  const handleNavigationMap = (path) => {
+    ativaFolha()
+    return history.push(path);
+  }
+
   return (
     <div className="footerFixo">
       <Navbar.Wrapper>
@@ -55,7 +60,7 @@ const Footer = () => {
               className="tamanhoIcone"
             />
           </Navbar.Logo>
-          <Navbar.Logo onClick={ativaFolha}>
+          <Navbar.Logo onClick={() => handleNavigationMap("/maps/list")}>
             <img
               class="iconeFolha"
               src={ativado ? folhaDesativada : folhaAtivada}
