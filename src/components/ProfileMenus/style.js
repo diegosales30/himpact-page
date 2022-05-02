@@ -19,7 +19,7 @@ export const ContainerProfileMenus = styled.div`
         display:flex;
         align-items: center;
         width: 320px;
-        height: 70px;
+        height: 71px;
         justify-content: space-between;
         font-family: 'Inter';
         font-style: normal;
