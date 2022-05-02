@@ -3,15 +3,17 @@
 
 ### Telas
 <div>
-  <img src="https://user-images.githubusercontent.com/58118544/166174050-67a9c671-6dd3-4046-9713-462a2310817b.png" width= '106px'/>
-  <img src="https://user-images.githubusercontent.com/58118544/166174051-9d108eef-cf7f-4d25-a85f-38c6abcb5712.png" width= '100px'/>
-  <img src="https://user-images.githubusercontent.com/58118544/166174052-143c42ac-6786-4572-b47b-b7cc5dab6a91.png" width= '100px'/>
-  <img src="https://user-images.githubusercontent.com/58118544/166174042-d50825cf-26ce-4204-b418-1d80568d434c.png" width= '100px'/>
-  <img src="https://user-images.githubusercontent.com/58118544/166174045-2801d637-332d-4af7-8705-d10aafd0e923.png" width= '100px'/>
-  <img src="https://user-images.githubusercontent.com/58118544/166174046-c02f7423-2ab8-467e-be8c-d5f3d1d96174.png" width= '100px'/>
-  <img src="https://user-images.githubusercontent.com/58118544/166174047-218fc55c-b5ab-4464-804a-1192d4abef49.png" width= '100px'/>
-  <img src="https://user-images.githubusercontent.com/58118544/166174048-ef309d0a-755e-4066-a8b2-cad3f33c9324.png" width= '100px'/>
-  <img src="https://user-images.githubusercontent.com/58118544/166174049-d68b6b0a-acc1-4441-b008-ed4ef5512292.png" width= '100px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174050-67a9c671-6dd3-4046-9713-462a2310817b.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174051-9d108eef-cf7f-4d25-a85f-38c6abcb5712.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174052-143c42ac-6786-4572-b47b-b7cc5dab6a91.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174042-d50825cf-26ce-4204-b418-1d80568d434c.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174045-2801d637-332d-4af7-8705-d10aafd0e923.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174046-c02f7423-2ab8-467e-be8c-d5f3d1d96174.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174047-218fc55c-b5ab-4464-804a-1192d4abef49.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174048-ef309d0a-755e-4066-a8b2-cad3f33c9324.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166174049-d68b6b0a-acc1-4441-b008-ed4ef5512292.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166175388-68876039-e97b-4fae-b803-0fe7ae714fc6.png" width= '80px'/>
+  <img src="https://user-images.githubusercontent.com/58118544/166175391-621b8e14-db6b-45b0-bde0-f6812799f0be.png" width= '80px' />
  </div>
 
 ### Definições:
