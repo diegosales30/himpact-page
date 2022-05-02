@@ -1,27 +1,40 @@
 import React from "react";
+import { centros } from "../../data/maps-list.js";
+import { useParams } from "react-router-dom";
+import { CardMap, Iframe } from "./style"
+
 
 const MapPage = () => {
+    const params = useParams();
+    const url = `https://www.google.com.br/maps?q=${params.q},%20Brasil&output=embed`
 
-    // const exibeIframe = (cep) => {
-    //     document
-    //       .querySelector("#iframe")
-    //       .setAttribute(
-    //         "src",
-    //         `https://www.google.com.br/maps?q=${cep},%20Brasil&output=embed`
-    //       );
-    //   }
-
+    const centro = centros.map(centro => {
+        let card = ""
+         if(centro.cep === params.q) {
+            return (
+                card = 
+                <CardMap key={centro.cep}>
+                    <h1>{centro.nome}</h1>
+                    <p>{centro.endereco}, {centro.cidade} - {centro.estado}</p>
+                    <p>{centro.cep}</p>
+                    <p>{centro.telefone}</p>
+                </CardMap>
+           )
+        }
+        return card;
+     })
+       
     return(
         <>
-            <iframe 
-                src="https://www.google.com.br/maps?q=41205-000,%20Brasil&output=embed" 
+            {centro}
+            <Iframe 
+                src={url}
                 frameborder="0" 
                 allowfullscreen="" 
                 aria-hidden="false" 
                 tabindex="0" 
-                id="iframe"
                 title="map">
-            </iframe>
+            </Iframe>
         </>
     )
 }

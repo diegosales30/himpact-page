@@ -1,11 +1,10 @@
-import HeaderMenu from "../../components/HeaderMenu";
+import React from "react"
 import Footer from "../../components/Footer";
 import MapPage from "../../components/MapPage";
 
 const MapDetails = () => {
   return (
     <>
-        <HeaderMenu />
         <MapPage />
         <Footer/>
     </>

@@ -46,10 +46,10 @@ const Routes = () => {
       <Route path="/company/details">
         <CompanyDetails />
       </Route>
-      <Route path="/maps">
+      <Route path="/maps/list">
         <Maps />
       </Route>
-      <Route path="/maps/details">
+      <Route path="/maps/details/:q">
         <MapsDetails />
       </Route>
     </Switch>
