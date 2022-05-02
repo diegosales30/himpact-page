@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerProfileMenus = styled.div`
-    height: 100vh;
-    overflow-x: auto;
+    min-height: 670px;
+  
     section {
       width: 360px;
       height: 70px;
@@ -30,7 +30,7 @@ export const ContainerProfileMenus = styled.div`
         
       }
       &:hover{
-          box-shadow: 5px 2px 15px 1px rgba(57, 57, 57, 0.6);
+          box-shadow: 5px 2px 15px 1px rgba(57, 57, 57, 0.3);
         }
       
     }
