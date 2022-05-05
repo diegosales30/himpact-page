@@ -15,6 +15,9 @@
   <img src="https://user-images.githubusercontent.com/58118544/166175388-68876039-e97b-4fae-b803-0fe7ae714fc6.png" width= '80px'/>
   <img src="https://user-images.githubusercontent.com/58118544/166175391-621b8e14-db6b-45b0-bde0-f6812799f0be.png" width= '80px' />
  </div>
+ 
+ ### Deploy da aplicação com Vercel: :octocat:: 
+[Himpact](https://himpact-page-diegosales30.vercel.app/)
 
 ### Definições:
 - Exibe locais de coleta de reciclaveis de acordo com a região que se encontra
@@ -45,8 +48,7 @@
 - <img src="https://img.shields.io/static/v1?label=miro&message=UX/UI&language&color=yellow&style=for-the-badge&logo=MIRO"/>
 - <img src="https://img.shields.io/static/v1?label=notion&message=Gerenciamento&language&color=black&style=for-the-badge&logo=NOTION"/>
 
-### Deploy da aplicação com Github Pages: :octocat:: 
-[Himpact](https://himpact-page-diegosales30.vercel.app/)
+
 
 ### Como rodar a aplicação:
 No terminal clone o projeto:
